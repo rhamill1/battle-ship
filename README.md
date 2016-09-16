@@ -10,5 +10,12 @@ Phase - MVP
         guess
             return hit or miss
     Wire Frame
-    Pseudo Code
 
+    Pseudo Code
+        HideBattleShip function () {
+
+        };
+
+        ShootBattleShip function () {
+
+        };
