@@ -1,3 +1,42 @@
+
 body {
     background:  gray;
+}
+
+#full-board {
+    outline: black solid 2px;
+    height: 200px;
+    width: 200px;
+}
+
+
+.one.columns {
+    background: red;
+    height: 200px;
+    width: 200px;
+    outline: black solid 2px;
+}
+
+.two.columns {
+    background: green;
+    height: 200px;
+    width: 200px;
+}
+.three.columns {
+    background: green;
+    height: 200px;
+    width: 200px;
+}
+
+
+#row1 {
+    outline: black solid 2px;
+}
+
+#row2 {
+    outline: black solid 2px;
+}
+
+#row3 {
+    outline: black solid 2px;
 }

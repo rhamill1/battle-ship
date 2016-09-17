@@ -1,3 +1,11 @@
+
+Technology Usage Goals
+    jquery
+    skeleton
+
+
+
+
 Phase - MVP
     User Story
     	user 1 hides a battleship in 1 cell
