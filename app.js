@@ -6,9 +6,10 @@ window.onload = function() {
 
     function hideBattleShip() {
          $("#submit-button").click(function() {
-          console.log('The submit button worked!!!');
+          // console.log('The submit button worked!!!');
           var shipLocation = $("#battleShipInput").val()
-          console.log("I'm at " + shipLocation);
+          // console.log("I'm at " + shipLocation);
+          $("#return-text").html("Captain 2. Where will you fire your torpedos?");
           guessBattleShip(shipLocation)
         });
     }
@@ -17,10 +18,10 @@ window.onload = function() {
     function guessBattleShip(BattleShipCoordinates) {
         this.BattleShipCoordinates = BattleShipCoordinates;
          $("#guess-button").click(function() {
-          console.log('The guess button worked!!!');
+          // console.log('The guess button worked!!!');
           var guessLocation = $("#fireTorpedo").val();
-          console.log("The ship's at " + BattleShipCoordinates);
-          console.log("FIRE torpedos at " + guessLocation);
+          // console.log("The ship's at " + BattleShipCoordinates);
+          // console.log("FIRE torpedos at " + guessLocation);
           checkGuess(guessLocation, BattleShipCoordinates);
         });
     }
@@ -33,10 +34,22 @@ window.onload = function() {
         this.guessBattleShip = guessBattleShip;
         this.hideBattleShip = hideBattleShip;
         if (guessBattleShip === hideBattleShip) {
-            console.log('you sunk my BattleShip');
+            // console.log('you sunk my BattleShip');
+            $("#return-text").html("you sunk my BattleShip");
         }
         else {
-            console.log("The torpedos missed.  Hurry and reload!!! We're being fired upon!!!")
+            // console.log("The torpedos missed.  Hurry and reload!!! We're being fired upon!!!")
+            $("#return-text").html("The torpedos missed.  Hurry and reload!!! We're being fired upon!!!");
         }
     }
+
+
+    function newGame() {
+         $("#reset-button").click(function() {
+          console.log(location.reload());
+        });
+    }
+
+    newGame();
+
 }
