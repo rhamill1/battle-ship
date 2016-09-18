@@ -42,5 +42,12 @@ Phase 2 - Elaborate | clean looking and performing 1 round game
             allow user to reset the game - Good
         form
             remove hard coding from css.  make responsive - Good
-                format grid to stay on screen - Good
+
+            All the labels, submits and commentary at the top is looking cluttered scratch these goals
+                format grid to stay on screen
                 format grid axis to be clean and consistent (margins, padding and borders)
+
+Phase 3 -
+
+    Add two more columns
+    remove the guess section and allow the hide section to be repurposed for both
