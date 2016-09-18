@@ -29,6 +29,7 @@ https://rhamill1.github.io/battle-ship/index.html
 - return hit or miss
 
 ####Wire Frame
+![Alt text](images/phase1wireframe.jpg?raw=true "")
 
 ####Pseudo Code
 - HideBattleShip function() {};
@@ -38,10 +39,10 @@ https://rhamill1.github.io/battle-ship/index.html
 
 ###Phase 2 - Elaborate | clean looking and performing 1 round game
 ####Goals
--function
+- function
     - display guess and result text in the browser
     - allow user to reset the game
--form
+- form
     - remove hard coding from css.  make responsive
         - format grid to stay on screen
         - format grid axis to be clean and consistent (margins, padding and borders)
@@ -58,7 +59,7 @@ https://rhamill1.github.io/battle-ship/index.html
     - publish on public url
     - confirm oop constructors
 - Clean code formatting up
-- Clean up read me - 15 minutes
+- Clean up readme
 
 
 ###Phase 5 - Above and Beyond | Time Permitting
