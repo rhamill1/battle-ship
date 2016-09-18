@@ -1,4 +1,7 @@
 
+URL: https://rhamill1.github.io/battle-ship/index.html
+
+
 Technology Usage Goals
     jquery
     skeleton
@@ -45,8 +48,23 @@ Phase 2 - Elaborate | clean looking and performing 1 round game
                 format grid to stay on screen
                 format grid axis to be clean and consistent (margins, padding and borders)
 
+
 Phase 3 - Elaborate
 
     Add two more columns - Good
     Center elements within their divs
     change background color of div after hit
+
+
+Phase 4 - Finish Requirements
+    Double check I've achieved all requirements
+        publish on public url
+        confirm oop constructors
+    Clean code formatting up - 5 minutes
+    Clean up read me - 15 minutes
+
+
+Phase 5 - Above and Beyond | Time Permitting
+    Allow Captain 1 to choose cell size of ship
+    Update guess and check to hit vs. sunk
+    Allow both players to be able to hide and fire torpedos

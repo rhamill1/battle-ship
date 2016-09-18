@@ -4,28 +4,28 @@ window.onload = function() {
     console.log("it's loaded");
 
 
-    function hideBattleShip() {
-         $("#submit-button").click(function() {
-          var shipLocation = $("#battleShipInput").val()
-          $("#return-text").html("<strong>Captain 2</strong>. Where will you fire your torpedos?");
-          guessBattleShip(shipLocation)
+    function HideBattleShip() {
+        $("#submit-button").click(function() {
+            var shipLocation = $("#battleShipInput").val()
+            $("#return-text").html("<strong>Captain 2</strong>. Where will you fire your torpedos?");
+            GuessBattleShip(shipLocation)
         });
     }
 
 
-    function guessBattleShip(BattleShipCoordinates) {
+    HideBattleShip();
+
+
+    function GuessBattleShip(BattleShipCoordinates) {
         this.BattleShipCoordinates = BattleShipCoordinates;
-         $("#guess-button").click(function() {
-          var guessLocation = $("#fireTorpedo").val();
-          checkGuess(guessLocation, BattleShipCoordinates);
+        $("#guess-button").click(function() {
+            var guessLocation = $("#fireTorpedo").val();
+            CheckGuess(guessLocation, BattleShipCoordinates);
         });
     }
 
 
-    hideBattleShip();
-
-
-    function checkGuess(guessBattleShip, hideBattleShip) {
+    function CheckGuess(guessBattleShip, hideBattleShip) {
         this.guessBattleShip = guessBattleShip;
         this.hideBattleShip = hideBattleShip;
         matrixLookup = {'a': 'two', 'b': 'three', 'c': 'four', 'd': 'five', 'e': 'six', 'f': 'seven', 'g': 'eight', 'h': 'nine'};
@@ -43,11 +43,14 @@ window.onload = function() {
     }
 
 
-    function newGame() {
-         $("#reset-button").click(function() {
-          console.log(location.reload());
+    function NewGame() {
+        $("#reset-button").click(function() {
+            console.log(location.reload());
         });
     }
 
-    newGame();
+
+    NewGame();
+
+
 }
