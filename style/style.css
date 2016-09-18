@@ -1,37 +1,41 @@
 
 body {
-    background:  gray;
+    background:  #414141;
     margin-left: 2em;
     margin-right: 2em;
     text-align:center;
-    /*display: inline-block*/
 }
 
+.board {
+    background: #01294e;
+    position: relative;
+}
 
 #rowh, #row1, #row2, #row3, #row4 {
-    outline: black solid 2px;
     height: 12vh;
     text-align: center;
-
+    color: white;
 }
 
-.one.columns, .two.columns, .three.columns, .four.columns, .five.columns, .six.columns , .seven.columns, .eight.columns {
-    background: red;
-    outline: black solid 2px;
+.one.columns, .two.columns, .three.columns, .four.columns, .five.columns, .six.columns , .seven.columns, .eight.columns, .nine.columns  {
+    background: #1a3e5f;
     display: inline;
     margin: .5em;
     height: 80%;
-    width: 10%;
+    width: 9%;
     text-align: center;
 }
-
 
 .hide, .guess, .newGame {
     display: inline-block;
     border: black solid 2px;
-    height: 30vh;
-    width: 30vw;
     vertical-align: top;
+    background:  gray;
+    margin-top: 1em;
+    padding: 0 1em 0 1em;
+    padding-top: 1.5em;
+    height: 30vh;
+    width: 25vw;
 }
 
 .scoreboard {
@@ -39,7 +43,9 @@ body {
     display: inline;
 }
 
-
 .board {
+    margin-top: 1em;
     background: #01294e;
+    position: relative;
+
 }
