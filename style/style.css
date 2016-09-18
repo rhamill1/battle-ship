@@ -3,11 +3,12 @@ body {
     background:  gray;
     margin-left: 2em;
     margin-right: 2em;
+    text-align:center;
     /*display: inline-block*/
 }
 
 
-#row1, #row2, #row3 {
+#rowh, #row1, #row2, #row3, #row4 {
     outline: black solid 2px;
     height: 12vh;
     text-align: center;
@@ -25,11 +26,12 @@ body {
 }
 
 
-.hide, .guess, .return-text {
-    display: inline;
+.hide, .guess, .newGame {
+    display: inline-block;
     border: black solid 2px;
     height: 30vh;
     width: 30vw;
+    vertical-align: top;
 }
 
 .scoreboard {

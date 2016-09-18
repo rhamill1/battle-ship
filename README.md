@@ -38,16 +38,15 @@ Phase 1 - MVP | guess, hide and check
 Phase 2 - Elaborate | clean looking and performing 1 round game
     Goals
         function
-            display guess and result text in the browser - Good
-            allow user to reset the game - Good
+            display guess and result text in the browser
+            allow user to reset the game
         form
-            remove hard coding from css.  make responsive - Good
-
-            All the labels, submits and commentary at the top is looking cluttered scratch these goals
+            remove hard coding from css.  make responsive
                 format grid to stay on screen
                 format grid axis to be clean and consistent (margins, padding and borders)
 
-Phase 3 -
+Phase 3 - Elaborate
 
-    Add two more columns
-    remove the guess section and allow the hide section to be repurposed for both
+    Add two more columns - Good
+    Center elements within their divs
+    change background color of div after hit

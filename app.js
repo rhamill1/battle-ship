@@ -6,10 +6,8 @@ window.onload = function() {
 
     function hideBattleShip() {
          $("#submit-button").click(function() {
-          // console.log('The submit button worked!!!');
           var shipLocation = $("#battleShipInput").val()
-          // console.log("I'm at " + shipLocation);
-          $("#return-text").html("Captain 2. Where will you fire your torpedos?");
+          $("#return-text").html("<strong>Captain 2</strong>. Where will you fire your torpedos?");
           guessBattleShip(shipLocation)
         });
     }
@@ -18,10 +16,7 @@ window.onload = function() {
     function guessBattleShip(BattleShipCoordinates) {
         this.BattleShipCoordinates = BattleShipCoordinates;
          $("#guess-button").click(function() {
-          // console.log('The guess button worked!!!');
           var guessLocation = $("#fireTorpedo").val();
-          // console.log("The ship's at " + BattleShipCoordinates);
-          // console.log("FIRE torpedos at " + guessLocation);
           checkGuess(guessLocation, BattleShipCoordinates);
         });
     }
@@ -33,13 +28,14 @@ window.onload = function() {
     function checkGuess(guessBattleShip, hideBattleShip) {
         this.guessBattleShip = guessBattleShip;
         this.hideBattleShip = hideBattleShip;
+        matrixLookup = {'a': 'two', 'b': 'three', 'c': 'four', 'd': 'five', 'e': 'six', 'f': 'seven', 'g': 'eight'};
         if (guessBattleShip === hideBattleShip) {
-            // console.log('you sunk my BattleShip');
-            $("#return-text").html("you sunk my BattleShip");
+            $("#return-text").html("<strong>Captain 2</strong>, you sunk Captain 1's battle ship!");
+            $("#row" + BattleShipCoordinates[1]).find("." + matrixLookup[BattleShipCoordinates[0]]).css( "background", "green" );
         }
         else {
-            // console.log("The torpedos missed.  Hurry and reload!!! We're being fired upon!!!")
-            $("#return-text").html("The torpedos missed.  Hurry and reload!!! We're being fired upon!!!");
+            $("#return-text").html("<strong>Captain 2</strong>, the torpedos missed.  Hurry and reload!!! We're being fired upon!!! Pick another coordinate and fire again!!!");
+            $("#row" + guessBattleShip[1]).find("." + matrixLookup[guessBattleShip[0]]).css( "background", "white" );
         }
     }
 
