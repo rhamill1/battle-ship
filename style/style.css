@@ -36,3 +36,8 @@ body {
     height: 30vh;
     display: inline;
 }
+
+
+.board {
+    background: #01294e;
+}
